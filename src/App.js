@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Ref from "./hooks/Ref";
+import Reducer from './hooks/Reducer';
+import State from './hooks/State';
+import Effect from './hooks/Effect';
+import Memo from './hooks/Memo';
+import Context from './hooks/Context';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Context />
     </div>
   );
 }
